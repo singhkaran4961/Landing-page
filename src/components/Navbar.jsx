@@ -3,11 +3,12 @@ import { IoIosContact } from "react-icons/io";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaSearch } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <>
-      <div className="flex h-22 bg-blue-500 justify-between px-15 items-center  w-full fixed max-[796px]:justify-center  ">
+      <div className="flex h-22 bg-blue-500 justify-between  z-99 px-15 items-center  w-full fixed max-[796px]:justify-center   ">
         <div className=" flex gap-18 text-center text-black text-2xl  justify-center items-center max-[796px]:w-full max-[796px]:justify-between ">
 
           <div className="hover:scale-125 text-3xl text-black hidden max-[1274px]:block"><GiHamburgerMenu/></div>
@@ -15,18 +16,14 @@ const Navbar = () => {
             Shops <h1 className="text-white">e</h1>
           </div>
 
-          <a href="" className=" hover:scale-120 max-[1274px]:hidden">
-            Home
-          </a>
-          <a href="" className=" hover:scale-120  max-[1274px]:hidden">
-            About
-          </a>
-          <a href="" className=" hover:scale-120 max-[1274px]:hidden">
-            Product
-          </a>
-          <a href="" className= "hover:scale-120 whitespace-nowrap max-[1274px]:hidden">
-            Contact Us
-          </a>
+
+
+          <Link to={"/"} className=" hover:scale-120 max-[1274px]:hidden">Home</Link>
+          <Link to={"/"} className=" hover:scale-120 max-[1274px]:hidden">About</Link>
+          <Link to={"/productpage"} className=" hover:scale-120 max-[1274px]:hidden">Product</Link>
+          <Link to={"/"} className= "hover:scale-120 whitespace-nowrap max-[1274px]:hidden">Contact Us</Link>
+
+     
         </div>
 
         <div className="  text-2xl text-black flex gap-20 max-[796px]:hidden ">
