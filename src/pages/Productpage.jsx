@@ -2,39 +2,40 @@ import React from "react";
 import { MdOutlineSearch } from "react-icons/md";
 import Products from "../components/Products";
 import { mainproducts } from "../data";
+import Footer from "../components/Footer";
 
 const Productpage = () => {
   return (
-    <div className="h-auto bg-blue-400  z-[-1] pt-35 ">
+    <div className="h-full bg-blue-400  z-[-1] pt-35 ">
       <div className="w-full h-20  item-center justify-center flex ">
         <h1 className="font-mono text-6xl text-black">Products</h1>
       </div>
-      <div className="w-full h-20 flex justify-end items-center pr-42 gap-38 ">
+      <div className="w-full h-20 flex justify-end items-center px-10 gap-38 max-[1184px]:justify-evenly max-[886px]:px-0 max-[886px]:gap-0 max-[796px]:flex-col max-[796px]:justify-center  max-[796px]:gap-10 pt-10">
         <div className=" flex relative">
           <input
             type="text"
             placeholder=""
-            className="  bg-gray-100 w-100 h-11 rounded-full text-start px-10 border-none text-2xl capitalize focus:outline-none focus:opacity-90 "
+            className="  bg-gray-100 w-150 h-11 rounded-full text-start px-10 border-none text-2xl capitalize focus:outline-none focus:opacity-90 max-[1184px]:w-100 max-[1344px]:w-120  max-[796px]:w-80"
           />
           <div className=" absolute right-3 top-2 text-2xl font-extrabold cursor-pointer">
             <MdOutlineSearch />
           </div>
         </div>
 
-        <div className=" flex  text-xl font-mono justify-center items-center  bg-blue-100 px-4 py-1 rounded-xl">
+        <div className=" flex  whitespace-nowrap text-xl font-mono justify-center items-center  bg-blue-100 px-4 py-1 rounded-xl " >
           <label >Sort :</label>
 
           <select className="cursor-pointer" id="sort" name="sort">
-            <option value="High to low">High to low</option>
-            <option value="Low to high">Low to high</option>
+            <option value="High to low">High to low price</option>
+            <option value="Low to high">Low to high price</option>
           </select>
         </div>
       </div>
 
       <div className=" w-full h-auto px-3">
-        <div className="w-full h-full flex rounded-lg gap-4 ">
-          <div className=" h-1/3 w-1/5 bg-sky-100 rounded-lg  flex flex-col justify-start items-center py-5 gap-4">
-            <h1 className="text-3xl font-mono">Categories</h1>
+        <div className="w-full h-full flex rounded-lg gap-4 relative pt-18 max-[796px]:flex-col max-[796px]:justify-center max-[796px]:items-center ">
+          <div className=" h-1/3 w-1/5 bg-sky-100 rounded-lg  flex flex-col justify-start items-center py-5 gap-4 max-[796px]:w-80">
+            <h1 className="text-3xl font-mono max-[1184px]:text-xl max-[796px]:text-2xl">Categories</h1>
             <div className="flex flex-col gap-4">
               <div className="flex gap-9 text-2xl font-mono justify-center items-center">
                 <label >Men</label>
@@ -62,13 +63,33 @@ const Productpage = () => {
               </div>
             </div>
           </div>
-          <div className=" h-auto  w-1/1 gap-10 pb-10  flex justify-evenly items-center flex-wrap   rounded-lg">
+          <div className=" h-230 overflow-scroll scrollbar-none w-1/1 gap-10 pb-10  flex justify-evenly items-center flex-wrap   rounded-lg">
             {mainproducts.map((e,idx) => {
               return <Products key={idx} mainimage={e.image} mainproductname={e.productName} mainprice={e.price} />;
             })}
           </div>
+
+
+
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
       </div>
+
+      
     </div>
   );
 };

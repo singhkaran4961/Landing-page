@@ -19,25 +19,29 @@ const Navbar = () => {
 
 
           <Link to={"/"} className=" hover:scale-120 max-[1274px]:hidden">Home</Link>
-          <Link to={"/"} className=" hover:scale-120 max-[1274px]:hidden">About</Link>
-          <Link to={"/productpage"} className=" hover:scale-120 max-[1274px]:hidden">Product</Link>
-          <Link to={"/"} className= "hover:scale-120 whitespace-nowrap max-[1274px]:hidden">Contact Us</Link>
+          <Link to={"/about"} className="  whitespace-nowrap hover:scale-120 max-[1274px]:hidden">About Us</Link>
+          <Link to={"/productpage"} className=" hover:scale-120 max-[1274px]:hidden">Products</Link>
+          <Link to={"/contactus"} className= "hover:scale-120 whitespace-nowrap max-[1274px]:hidden">Contact Us</Link>
 
      
         </div>
 
         <div className="  text-2xl text-black flex gap-20 max-[796px]:hidden ">
-          <a href="" className="hover:scale-120 ">
+          <a href="" className=" flex  justify-center items-center hover:scale-120  ">
               <FaSearch />
         
            
           </a>
-          <a href="" className=" hover:scale-120">
+          <a href="" className="   w-10  h-10 flex  justify-center items-center hover:scale-120 relative">
+            <div className="absolute text-sm flex text-center  font-bold p-2 justify-center items-center right-0 top-0 bg-red-500 h-4  w-4 rounded-full">0</div>
+
+
         
             <FaCartShopping />
           </a>
-          <a href="" className=" hover:scale-120">
-           <IoIosContact />
+          <a href="" className=" flex  justify-center items-center  hover:scale-120">
+              <IoIosContact />
+           
           
           </a>
         </div>

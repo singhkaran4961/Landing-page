@@ -1,22 +1,22 @@
 export const products = [
   {
     image: "src/assets/floral.jpg",
-    productName: "Floral Summer Dress",
+    productName: "Womens Floral  Dress",
     price:"$20"
   },
   {
-    image: "src/assets/shoes.jpg",
-    productName: "Classic White Sneakers",
-    price: "$203"
+    image: "src/assets/mainproductsimg/jeans.jpg",
+    productName: "Mens Slim Fit Jeans",
+    price: "$24"
   },
   {
     image: "src/assets/photo-1521572163474-6864f9cf17ab.jpg",
-    productName: "Everyday Cotton T-Shirt",
+    productName: "Mens Classic  T-Shirt",
     price: "$200"
   },
   {
     image: "src/assets/denim.jpg",
-    productName: "Denim Jacket",
+    productName: " Mens Denim Jacket",
     price: "$20"
   },
   
@@ -24,63 +24,112 @@ export const products = [
 
 export const mainproducts = [
   {
-    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
-    productName: "Men's Classic  T-Shirt",
+    image: "src/assets/photo-1521572163474-6864f9cf17ab.jpg",
+    productName: "Mens Classic  T-Shirt",
     price: "$11"
   },
   {
-    image: "https://images.unsplash.com/photo-1542272604-787c3835535d",
-    productName: "Men's Slim Fit Jeans",
+    image: "src/assets/mainproductsimg/jeans.jpg",
+    productName: "Mens Slim Fit Jeans",
     price: "$24"
   },
   {
-    image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea",
-    productName: "Men's Denim Jacket",
+    image: "src/assets/denim.jpg",
+    productName: "Mens Denim Jacket",
     price: "$34"
   },
   {
-    image: "https://images.unsplash.com/photo-1618354691373-d851c5c3a990",
-    productName: "Men's Casual Hoodie",
+    image: "src/assets/mainproductsimg/blacktshirt.jpg",
+    productName: "Mens Casual T-shirt",
     price: "$23"
   },
   {
-    image: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b",
-    productName: "Women's Floral  Dress",
+    image: "src/assets/floral.jpg",
+    productName: "Womens Floral  Dress",
     price: "$30"
   },
   {
-    image: "https://images.unsplash.com/photo-1551163943-3f6a855d1153",
-    productName: "Women's Classic Blouse",
+    image: "src/assets/mainproductsimg/blouse.jpg",
+    productName: "Womens Classic Blouse",
     price: "$18"
   },
   {
-    image: "https://images.unsplash.com/photo-1584370848010-d7fe6bc767ec",
-    productName: "Women's  Trousers",
+    image: "src/assets/mainproductsimg/trouser.jpg",
+    productName: "Womens  Trousers",
     price: "$22"
   },
   {
-    image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
-    productName: "Women's Knit Cardigan",
+    image: "src/assets/mainproductsimg/cardigan.jpg",
+    productName: "Womens Knit Cardigan",
     price: "$27"
   },
   {
-    image: "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea",
-    productName: "Kids' Printed T-Shirt",
+    image: "src/assets/mainproductsimg/kidstshirt.jpg",
+    productName: "Kids Printed T-Shirt",
     price: "$7"
   },
   {
-    image: "https://images.unsplash.com/photo-1503919005314-30d93d07d823",
-    productName: "Kids' Denim Overalls",
+    image: "src/assets/mainproductsimg/kiddenim.jpg",
+    productName: "Kids Denim Overalls",
     price: "$15"
   },
   {
-    image: "https://images.unsplash.com/photo-1519457431-44ccd64a579b",
-    productName: "Kids' Party Dress",
+    image: "src/assets/mainproductsimg/kidparty.jpg",
+    productName: "Kids Party Dress",
     price: "$18"
   },
   {
-    image: "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea",
-    productName: "Kids' Cozy Hoodie",
+    image: "src/assets/mainproductsimg/kidscozy.jpg",
+    productName: "Kids Cozy Hoodie",
     price: "$13"
   }
 ];
+
+
+export const sale = [
+   {
+    image: "src/assets/mainproductsimg/trouser.jpg",
+    productName: "Womens  Trousers",
+    price: "$22"
+  },
+  {
+    image: "src/assets/mainproductsimg/cardigan.jpg",
+    productName: "Womens Knit Cardigan",
+    price: "$27"
+  },
+  {
+    image: "src/assets/mainproductsimg/kidstshirt.jpg",
+    productName: "Kids Printed T-Shirt",
+    price: "$7"
+  },
+ 
+];
+
+
+
+export  const aboutproduct=[
+
+{
+  title:"Thoughtful style",
+  para:"We design that are easy to wear and simple to make your own.Each style is created to fit naturally into your wardrobe"
+
+
+},{
+
+title:"Comfort comes first",
+para:"Good style should feel as good as it looks. We look for comfortable fits and fabrics you all enjoy wearing."
+
+
+},
+{
+title:"Quality in the details",
+para:"From the cut to the finishing touches, we care about the little things that make a piece worth wearing again."
+
+
+}
+
+
+
+
+
+]

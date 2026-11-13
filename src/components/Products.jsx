@@ -2,7 +2,7 @@ import React from 'react'
 
 const Products = ({name,price,img,mainimage,mainproductname,mainprice}) => {
   return (
-    <div className='bg-white   w-60 rounded-lg justify-center items-center flex flex-col cursor-pointer py-1  '>
+    <div className='bg-white   w-60 rounded-lg justify-center items-center flex flex-col cursor-pointer py-2  '>
         <div className=" h-40 w-55  flex  overflow-hidden    ">
             <img src={img || mainimage} className='w-full h-full object-cover hover:scale-130 transition-all  duration-200 ease-in'  alt=''></img>
         </div>
@@ -13,7 +13,7 @@ const Products = ({name,price,img,mainimage,mainproductname,mainprice}) => {
 
         </div>
 
-        <button className='bg-red-500 p-2 rounded-xl mt-2 text-white cursor-pointer text-sm hover:scale-120'>Shop Now</button>
+        <button className='bg-red-500 p-2 rounded-xl mt-2 text-white cursor-pointer text-sm hover:scale-120'>Add to cart</button>
 
 
         
