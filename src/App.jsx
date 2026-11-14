@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Herodown from './components/Herodown'
@@ -10,7 +10,12 @@ import Login from './pages/Login'
 import About from './pages/About'
 import Contact from './pages/Contact'
 
+
 const App = () => {
+
+
+
+
   return (
    <><div className="h-auto  bg-blue-400 scroll-smooth ">
 

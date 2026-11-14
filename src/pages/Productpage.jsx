@@ -65,7 +65,7 @@ const Productpage = () => {
           </div>
           <div className=" h-230 overflow-scroll scrollbar-none w-1/1 gap-10 pb-10  flex justify-evenly items-center flex-wrap   rounded-lg">
             {mainproducts.map((e,idx) => {
-              return <Products key={idx} mainimage={e.image} mainproductname={e.productName} mainprice={e.price} />;
+              return <Products key={idx}  element={e} mainimage={e.image} mainproductname={e.productName} mainprice={e.price} />;
             })}
           </div>
 

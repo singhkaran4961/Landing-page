@@ -1,6 +1,8 @@
-import React from 'react'
 
-const Products = ({name,price,img,mainimage,mainproductname,mainprice}) => {
+
+const Products = ({name,price,img,mainimage,mainproductname,mainprice,element}) => {
+
+
   return (
     <div className='bg-white   w-60 rounded-lg justify-center items-center flex flex-col cursor-pointer py-2  '>
         <div className=" h-40 w-55  flex  overflow-hidden    ">
@@ -13,7 +15,14 @@ const Products = ({name,price,img,mainimage,mainproductname,mainprice}) => {
 
         </div>
 
-        <button className='bg-red-500 p-2 rounded-xl mt-2 text-white cursor-pointer text-sm hover:scale-120'>Add to cart</button>
+        <button 
+
+     
+        
+        
+        
+        
+        className='bg-red-500 p-2 rounded-xl mt-2 text-white cursor-pointer text-sm hover:scale-120'>Add to cart</button>
 
 
         

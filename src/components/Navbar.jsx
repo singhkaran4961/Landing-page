@@ -1,11 +1,19 @@
-import React from "react";
+
 import { IoIosContact } from "react-icons/io";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaSearch } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { Link } from "react-router-dom";
+import { data, Link } from "react-router-dom";
 
 const Navbar = () => {
+
+
+
+
+  
+
+
+
   return (
     <>
       <div className="flex h-22 bg-blue-500 justify-between  z-99 px-15 items-center  w-full fixed max-[796px]:justify-center   ">
