@@ -4,6 +4,9 @@ import Products from "../components/Products";
 import { mainproducts } from "../data";
 import Footer from "../components/Footer";
 
+
+
+
 const Productpage = () => {
   return (
     <div className="h-full bg-blue-400  z-[-1] pt-35 ">
@@ -15,7 +18,7 @@ const Productpage = () => {
           <input
             type="text"
             placeholder=""
-            className="  bg-gray-100 w-150 h-11 rounded-full text-start px-10 border-none text-2xl capitalize focus:outline-none focus:opacity-90 max-[1184px]:w-100 max-[1344px]:w-120  max-[796px]:w-80"
+            className="  bg-gray-100 w-130 h-11 rounded-full text-start px-10 border-none text-2xl capitalize focus:outline-none focus:opacity-90 max-[1184px]:w-100 max-[1344px]:w-120  max-[796px]:w-80"
           />
           <div className=" absolute right-3 top-2 text-2xl font-extrabold cursor-pointer">
             <MdOutlineSearch />
@@ -88,6 +91,10 @@ const Productpage = () => {
 
         </div>
       </div>
+
+
+      
+
 
       
     </div>
