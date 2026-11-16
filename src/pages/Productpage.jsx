@@ -13,32 +13,11 @@ const Productpage = () => {
       <div className="w-full h-20  item-center justify-center flex ">
         <h1 className="font-mono text-6xl text-black">Products</h1>
       </div>
-      <div className="w-full h-20 flex justify-end items-center px-10 gap-38 max-[1184px]:justify-evenly max-[886px]:px-0 max-[886px]:gap-0 max-[796px]:flex-col max-[796px]:justify-center  max-[796px]:gap-10 pt-10">
-        <div className=" flex relative">
-          <input
-            type="text"
-            placeholder=""
-            className="  bg-gray-100 w-130 h-11 rounded-full text-start px-10 border-none text-2xl capitalize focus:outline-none focus:opacity-90 max-[1184px]:w-100 max-[1344px]:w-120  max-[796px]:w-80"
-          />
-          <div className=" absolute right-3 top-2 text-2xl font-extrabold cursor-pointer">
-            <MdOutlineSearch />
-          </div>
-        </div>
-
-        <div className=" flex  whitespace-nowrap text-xl font-mono justify-center items-center  bg-blue-100 px-4 py-1 rounded-xl " >
-          <label >Sort :</label>
-
-          <select className="cursor-pointer" id="sort" name="sort">
-            <option value="High to low">High to low price</option>
-            <option value="Low to high">Low to high price</option>
-          </select>
-        </div>
-      </div>
-
+     
       <div className=" w-full h-auto px-3">
-        <div className="w-full h-full flex rounded-lg gap-4 relative pt-18 max-[796px]:flex-col max-[796px]:justify-center max-[796px]:items-center ">
-          <div className=" h-1/3 w-1/5 bg-sky-100 rounded-lg  flex flex-col justify-start items-center py-5 gap-4 max-[796px]:w-80">
-            <h1 className="text-3xl font-mono max-[1184px]:text-xl max-[796px]:text-2xl">Categories</h1>
+        <div className="w-full h-full flex rounded-lg gap-4 relative pt-18 max-[900px]:flex-col max-[900px]:justify-center max-[900px]:items-center ">
+          <div className=" h-1/3 w-1/5 bg-sky-100 rounded-lg  mt-4 flex flex-col justify-start items-center py-5 gap-4 max-[900px]:w-80">
+            <h1 className="text-3xl font-mono max-[1184px]:text-xl max-[900px]:text-2xl">Categories</h1>
             <div className="flex flex-col gap-4">
               <div className="flex gap-9 text-2xl font-mono justify-center items-center">
                 <label >Men</label>
@@ -66,7 +45,32 @@ const Productpage = () => {
               </div>
             </div>
           </div>
-          <div className=" h-230 overflow-scroll scrollbar-none w-1/1 gap-10 pb-10  flex justify-evenly items-center flex-wrap   rounded-lg">
+          <div className=" h-auto px-0  w-1/1 gap-10 pb-10  flex justify-evenly items-center flex-wrap   rounded-lg">
+
+
+           <div className="w-full h-20 flex justify-between items-center px-10  max-[703px]:justify-center max-[703px]:flex-col max-[703px]:gap-5 max-[703px]:h-auto ">
+        <div className=" flex relative">
+          <input
+            type="text"
+            placeholder=""
+            className="  bg-gray-100 w-80 h-10 rounded-xl  text-start px-10 border-none text-lg capitalize focus:outline-none focus:opacity-90 "
+          />
+          <div className=" absolute right-3 top-2 text-2xl font-extrabold cursor-pointer">
+            <MdOutlineSearch />
+          </div>
+        </div>
+
+        <div className=" flex  whitespace-nowrap text-xl font-mono justify-center items-center  bg-blue-100 px-4 py-1 rounded-xl " >
+          <label >Sort :</label>
+
+          <select className="cursor-pointer" id="sort" name="sort">
+            <option value="High to low">High to low</option>
+            <option value="Low to high">Low to high</option>
+          </select>
+        </div>
+      </div>
+
+
             {mainproducts.map((e,idx) => {
               return <Products key={idx}  element={e} mainimage={e.image} mainproductname={e.productName} mainprice={e.price} />;
             })}

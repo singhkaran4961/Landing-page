@@ -9,6 +9,7 @@ import Footer from './components/Footer'
 import Login from './pages/Login'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import Singleproduct from './pages/Singleproduct'
 
 
 const App = () => {
@@ -33,7 +34,7 @@ const App = () => {
         <Route path='/productpage' element={<Productpage/>}></Route>
          <Route path='/about' element={<About/>}></Route>
           <Route path='/contactus' element={<Contact/>}></Route>
-
+        <Route path='/productpage/:pid' element={<Singleproduct/>}></Route>
       </Routes>
        <Footer/> 
 

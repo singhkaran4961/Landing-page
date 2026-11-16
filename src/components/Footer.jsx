@@ -58,8 +58,8 @@ const Footer = () => {
           Contact Us
         </a>
       </div>
-      <div className="flex flex-col gap-5">
-        <div className=" text-xl text-black flex items-center justify-center gap-2">
+      <div className="flex   justify-center items-center flex-col gap-5">
+        <div className="  text-xl text-black whitespace-nowrap flex items-center justify-center gap-2 max-[362px]:text-sm">
           
           <FaLocationPin />
           Location - Dehradun,India
