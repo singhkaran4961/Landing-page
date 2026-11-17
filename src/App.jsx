@@ -22,12 +22,12 @@ const App = () => {
 
 
     
-{/* <Login/> */}
+<Login/>
 
 
 
 
-       <Navbar/>
+       {/* <Navbar/>
 
       <Routes>
         <Route path='/' element={<Page1/>} ></Route>
@@ -36,7 +36,7 @@ const App = () => {
           <Route path='/contactus' element={<Contact/>}></Route>
         <Route path='/productpage/:pid' element={<Singleproduct/>}></Route>
       </Routes>
-       <Footer/> 
+       <Footer/>  */}
 
         
       </div>
