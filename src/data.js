@@ -1,26 +1,8 @@
-export const products = [
-  {
-    image: "src/assets/floral.jpg",
-    productName: "Womens Floral  Dress",
-    price:"$20"
-  },
-  {
-    image: "src/assets/mainproductsimg/jeans.jpg",
-    productName: "Mens Slim Fit Jeans",
-    price: "$24"
-  },
-  {
-    image: "src/assets/photo-1521572163474-6864f9cf17ab.jpg",
-    productName: "Mens Classic  T-Shirt",
-    price: "$200"
-  },
-  {
-    image: "src/assets/denim.jpg",
-    productName: " Mens Denim Jacket",
-    price: "$20"
-  },
+
+  export  function scrollno() {
   
-];
+    window.scroll(0,0)
+  }
 
 export const mainproducts = [
   {id:1,
@@ -86,24 +68,7 @@ export const mainproducts = [
 ];
 
 
-export const sale = [
-   {
-    image: "src/assets/mainproductsimg/trouser.jpg",
-    productName: "Womens  Trousers",
-    price: "$22"
-  },
-  {
-    image: "src/assets/mainproductsimg/cardigan.jpg",
-    productName: "Womens Knit Cardigan",
-    price: "$27"
-  },
-  {
-    image: "src/assets/mainproductsimg/kidstshirt.jpg",
-    productName: "Kids Printed T-Shirt",
-    price: "$7"
-  },
- 
-];
+
 
 
 

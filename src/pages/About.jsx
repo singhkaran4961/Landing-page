@@ -70,7 +70,7 @@ const About = () => {
 
       <div className="w-full h-80 flex justify-evenly  gap-10 flex-wrap  items-center mt-5 max-[960px]:h-auto">
         {aboutproduct.map((e, idx) => {
-          return <Aboutuspro title={e.title} para={e.para} />;
+          return <Aboutuspro key={idx} title={e.title} para={e.para} />;
         })}
       </div>
     </div>

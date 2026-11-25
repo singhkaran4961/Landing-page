@@ -72,7 +72,7 @@ const Productpage = () => {
 
 
             {mainproducts.map((e,idx) => {
-              return <Products key={idx}  element={e} mainimage={e.image} mainproductname={e.productName} mainprice={e.price} />;
+              return <Products key={idx}  element={e} img={e.image} name={e.productName} price={e.price} />;
             })}
           </div>
 
