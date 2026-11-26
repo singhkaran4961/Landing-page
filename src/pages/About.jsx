@@ -14,7 +14,7 @@ const About = () => {
         <div className="grid-cols-[500px_400px_400px]  grid-rows-[500px] grid  rounded-xl overflow-hidden  shadow-xl shadow-cyan-300  max-[1392px]:grid-cols-[500px_400px] max-[924px]:grid-rows-[repeat(2,500px)] max-[924px]:grid-cols-[500px] max-[527px]:grid-cols-[320px]">
           <div className=" col-[1/2] row-[1/2]  cursor-pointer ">
             <img
-              src="src/assets/floral.jpg"
+              src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=800&q=80"
               alt=""
               className="h-full w-full hover:scale-120"
             />
@@ -42,7 +42,7 @@ const About = () => {
         <div className="grid-cols-[400px_400px_500px] grid-rows-[500px] grid  rounded-xl overflow-hidden shadow-xl shadow-cyan-300 max-[1392px]:grid-cols-[400px_500px] max-[924px]:grid-cols-[500px] max-[527px]:grid-cols-[320px] max-[527px]:grid-rows-[250px_400px]">
           <div className=" col-[3/4] row-[1/2]  cursor-pointer max-[1392px]:col-[2/3] max-[924px]:col-[1/2] max-[924px]:row-[2/3]">
             <img
-              src="src/assets/denim.jpg"
+              src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=800&q=80"
               alt=""
               className="h-full w-full hover:scale-120"
             />

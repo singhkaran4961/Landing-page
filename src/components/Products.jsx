@@ -22,7 +22,7 @@ const Products = ({name,price,img,element}) => {
           
         
 
-        }} src={`/${img}`} className='w-full h-full object-cover hover:scale-130 transition-all  duration-150 ease-in'  alt=''></img>
+        }} src={img} className='w-full h-full object-cover hover:scale-130 transition-all  duration-150 ease-in'  alt=''></img>
         </div>
         <div className=" text-center">
             <h1 className='text-xl text-black'>{ name}</h1>

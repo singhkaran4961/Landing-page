@@ -1,7 +1,7 @@
 import React from "react";
 import { MdOutlineSearch } from "react-icons/md";
 import Products from "../components/Products";
-import { mainproducts } from "../data";
+import { productinfo } from "../data";
 import Footer from "../components/Footer";
 
 
@@ -71,8 +71,8 @@ const Productpage = () => {
       </div>
 
 
-            {mainproducts.map((e,idx) => {
-              return <Products key={idx}  element={e} img={e.image} name={e.productName} price={e.price} />;
+            {productinfo.map((e,idx) => {
+              return <Products key={idx}  element={e} img={e.images[0]} name={e.title} price={e.price} />;
             })}
           </div>
 

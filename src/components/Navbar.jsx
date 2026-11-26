@@ -4,7 +4,7 @@ import { FaCartShopping } from "react-icons/fa6";
 import { FaSearch } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { data, Link  } from "react-router-dom";
-import { scrollno } from "../data";
+
 
 const Navbar = () => {
 
@@ -27,10 +27,10 @@ const Navbar = () => {
 
 
 
-          <Link onClick={scrollno()} to={"/"} className="  hover:scale-120 max-[1274px]:hidden">Home</Link >
-          <Link onClick={scrollno()} to={"/about"} className="  whitespace-nowrap hover:scale-120 max-[1274px]:hidden">About Us</Link >
-          <Link onClick={scrollno()} to={"/productpage"} className=" hover:scale-120 max-[1274px]:hidden">Products</Link >
-          <Link onClick={scrollno()} to={"/contactus"} className= "hover:scale-120 whitespace-nowrap max-[1274px]:hidden">Contact Us</Link >
+          <Link  to={"/"} className="  hover:scale-120 max-[1274px]:hidden">Home</Link >
+          <Link  to={"/about"} className="  whitespace-nowrap hover:scale-120 max-[1274px]:hidden">About Us</Link >
+          <Link  to={"/productpage"} className=" hover:scale-120 max-[1274px]:hidden">Products</Link >
+          <Link  to={"/contactus"} className= "hover:scale-120 whitespace-nowrap max-[1274px]:hidden">Contact Us</Link >
 
      
         </div>

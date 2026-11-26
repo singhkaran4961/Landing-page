@@ -1,6 +1,6 @@
 import React from "react";
 import Products from "./Products";
-import { mainproducts } from "../data";
+import {  productinfo } from "../data";
 import { FaCarSide } from "react-icons/fa";
 import { MdSupportAgent } from "react-icons/md";
 import { GiReturnArrow } from "react-icons/gi";
@@ -13,13 +13,13 @@ const Herodown = () => {
       </div>
 
       <div className="h-auto w-full  flex justify-evenly flex-wrap item-center gap-5  ">
-        {mainproducts.slice(0,4).map((e, idx) => {
+        {productinfo.slice(0,4).map((e, idx) => {
           return (
             <Products
                element={e}
               key={idx}
-              img={e.image}
-              name={e.productName}
+              img={e.images}
+              name={e.title}
               price={e.price}
             />
           );
@@ -87,13 +87,13 @@ const Herodown = () => {
       </div>
 
       <div className="h-auto w-full  flex justify-evenly flex-wrap item-center gap-5  ">
-        {mainproducts.slice(8,11).map((e, idx) => {
+        {productinfo.slice(8,11).map((e, idx) => {
           return (
             <Products
             element={e}
               key={idx}
-              img={e.image}
-              name={e.productName}
+              img={e.images}
+              name={e.title}
               price={e.price}
             />
           );
